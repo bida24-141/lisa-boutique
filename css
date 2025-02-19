@@ -1,0 +1,177 @@
+body { 
+
+    font-family: Arial, sans-serif; 
+
+    margin: 0; 
+
+    padding: 0; 
+
+    background-color: #f9e6f2; /* Rosy Dew Theme */ 
+
+    color: #333; 
+
+} 
+
+ 
+
+header { 
+
+    display: flex; 
+
+    justify-content: space-between; 
+
+    align-items: center; 
+
+    background-color: #fff; 
+
+    padding: 20px; 
+
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+
+} 
+
+ 
+
+header image { 
+
+    max-width: 150px
+
+    height: auto
+
+    display: block
+
+} 
+
+ 
+
+nav ul { 
+
+    list-style: none; 
+
+    display: flex; 
+
+    gap: 20px; 
+
+} 
+
+ 
+
+nav ul li { 
+
+    display: inline; 
+
+} 
+
+ 
+
+nav ul li a { 
+
+    text-decoration: none; 
+
+    color: #333; 
+
+    font-weight: bold; 
+
+} 
+
+ 
+
+.banner { 
+
+    text-align: center; 
+
+    padding: 60px 20px; 
+
+    background: linear-gradient(to right, #f9c5d1, #f9e6f2); 
+
+    color: #333; 
+
+} 
+
+ 
+
+.banner h1 { 
+
+    font-size: 36px; 
+
+} 
+
+ 
+
+.btn { 
+
+    display: inline-block; 
+
+    margin-top: 15px; 
+
+    padding: 10px 20px; 
+
+    background-color: #d63384; 
+
+    color: white; 
+
+    text-decoration: none; 
+
+    border-radius: 5px; 
+
+} 
+
+ 
+
+.featured-products { 
+
+    text-align: center; 
+
+    padding: 50px 20px; 
+
+} 
+
+ 
+
+.product-grid { 
+
+    display: flex; 
+
+    justify-content: center; 
+
+    gap: 20px; 
+
+} 
+
+ 
+
+.product img { 
+
+    width: 150px; 
+
+    height: auto; 
+
+    border-radius: 10px; 
+
+} 
+
+ 
+
+.about { 
+
+    text-align: center; 
+
+    padding: 50px 20px; 
+
+} 
+
+ 
+
+footer { 
+
+    text-align: center; 
+
+    background-color: #fff; 
+
+    padding: 10px; 
+
+    margin-top: 20px; 
+
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1); 
+
+} 
