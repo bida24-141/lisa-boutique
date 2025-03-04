@@ -176,12 +176,11 @@ footer {
     box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1); 
 
 } 
-<header> 
 <div class="logo-container"> 
 
-    <img src="img_20250203_205223.jpg " | https://github.com/bida24-141/lisa-boutique/blob/main/IMG_20250203_205223.jpg?raw=true 
+    <img src="IMG_20250203_205223.jpg " | https://github.com/bida24-141/lisa-boutique/blob/main/IMG_20250203_205223.jpg?raw=true 
 
-}}" alt="Your Image" class="top-image">
+" alt="Your Image" class="top-image">
 
 </div> 
 
@@ -197,7 +196,7 @@ footer {
 
     .top-image { 
 
-        max-width: 100px 
+        max-width: 10px 
 
         margin-bottom: 10px 
 
@@ -205,7 +204,7 @@ footer {
 
     .logo { 
 
-        max-width: 150px 
+        max-width: 15px 
 
     } 
 
