@@ -108,6 +108,36 @@ nav ul li a {
     text-align: center; 
     padding: 50px 20px; 
 } 
+.about-section {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.about-section h1 {
+    color: #ff4081; /* Vibrant pink for a bold streetwear vibe */
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #222;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.about-section p:last-child {
+    font-weight: bold;
+    color: #ff4081;
+}
 
 /* Footer */
 footer { 
