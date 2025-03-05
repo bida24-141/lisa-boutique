@@ -40,7 +40,7 @@ header {
 
 /* Logo Image */
 .top-image { 
-    max-width: 90px;  /* Adjust size */
+    max-width: 100px;  /* Adjust size */
     height: auto;  
     margin-bottom: 5px; /* Space between the image and text */
 } 
@@ -119,13 +119,14 @@ nav ul li a:hover {
 
 /* Featured Products */
 .featured-products { 
+    flex: 1;
     text-align: center; 
-    padding: 50px 20px; 
+    padding: 10px; 
 } 
 
 .product-grid { 
     display: flex; 
-    justify-content: center; 
+    justify-content: space-between; 
     flex-wrap: wrap; /* Responsive */
     gap: 20px; 
 } 
