@@ -168,18 +168,3 @@ nav ul li a:hover {
     color: #ff4081;
 }
 
-/* Contact Section */
-.contact-container {
-    display: flex;
-    flex-wrap: wrap; /* Responsive */
-    align-items: center;
-    justify-content: center;
-    gap: 50px; /* Space between logo and contact info */
-    padding: 50px;
-}
-
-/* Contact Logo Styling */
-.contact-logo img {
-    width: 200px; /* Adjust size */
-    height: auto;
-    border-radius:
