@@ -42,6 +42,31 @@ function removeFromCart(index) {
     localStorage.setItem("cart", JSON.stringify(cart));
     displayCart();
 }
+//Function o clear cart
+function clearCart() {
+local storage.removeitem("cart");
+location.reload();
+}
+
+//Function to handle checkout
+function checkout() {
+    let cart =
+JSON.parse(localstorage.getItem('cart")) || [];
+
+    if (cart.length === 0) {
+        alert("Your cart is empty.Add items before checking out!");
+        return;
+}
+
+     let total = cart.reduce((sum,
+     item) => sum + item.price*item.quantity, 0);
+
+     //simulate a checkout process 
+     alert(`thank you for your purchase! Your total is $${total}`);
+
+     //clear the cart after checkout 
+     clearCart();
+}
 
 // Run displayCart() on cart page load
 document.addEventListener("DOMContentLoaded", displayCart);
