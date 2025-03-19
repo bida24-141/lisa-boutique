@@ -40,7 +40,7 @@ header {
 
 /* Logo Image */
 .top-image { 
-    max-width: 100px;  /* Adjust size */
+    max-width: 150px;  /* Adjust size */
     height: auto;  
     margin-bottom: 5px; /* Space between the image and text */
 } 
@@ -117,13 +117,13 @@ nav ul li a:hover {
     background-color: #c2185b;
 }
 .featured-products {
-    display: flex; /* Arrange items in a row */
+    display: grid; /* Arrange items in a row */
     gap: 10px; /* Adjust spacing between items */
     justify-content: space-between; /* Distribute items evenly */
 }
 
 .featured-products img {
-    width: 50px; /* Set the image size */
+    width: 30px; /* Set the image size */
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -295,14 +295,14 @@ button:hover {
 }
 
 .product img {
-    width: 100%;
-    height: auto;
+    width: "500";
+    height: "600";
     border-radius: 8px;
 }
 
 .price {
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: 8px;
+    font-size: 15px;
     color: #333;
     font-weight: bold;
     }
