@@ -1,10 +1,11 @@
 /* General Styles */
 body { 
-    font-family: Arial, sans-serif; 
+    font-family: 'Poppins, sans-serif; 
     margin: 0; 
     padding: 0; 
-    background-color: #f9e6f2;  
+    background-color: linear-gradient(to right, #fdeef4, #fff8fa); 
     color: #333; 
+    text-align: center;
 } 
 
 .rosy-dew-theme {
@@ -35,16 +36,17 @@ header {
 } 
 
 .top-image { 
-    max-width: 150px;  
+    max-width: 170px;  
     height: auto;  
     margin-bottom: 5px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
 } 
 
 .logo { 
-    font-size: 24px; 
+    font-size: 28px; 
     font-weight: bold; 
     color: #d63384; 
-    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1;
 } 
 nav {
     display: flex;
@@ -110,18 +112,20 @@ nav ul li a:hover {
     text-align: center;
     padding: 50px 20px;
 }
-featured-products grids{
-    display: 150px;
-    height: auto;
-    border-radius: 10px;
+.featured-products .product{
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 120px;
 }
-.featured-products img {
-    width: 150px;
+featured-products img {
+    width: 80px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
-/* About Section */
 .about-section {
     text-align: center;
     padding: 50px 20px;
@@ -300,3 +304,25 @@ button:hover {
     color: #333;
     font-weight: bold;
     }
+footer {
+    background-color: #fce4ec;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 50px;
+    border-top: 4px solid #d63384;
+}
+footer p {
+    margi; 5px 0;
+}
+.footer a {
+    text-decoration: none;
+    color: #d63384;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+.footer a:hover {
+    color: #e91e63;
+}
