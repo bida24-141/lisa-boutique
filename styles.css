@@ -3,57 +3,49 @@ body {
     font-family: Arial, sans-serif; 
     margin: 0; 
     padding: 0; 
-    background-color: #f9e6f2; /* Rosy Dew Theme */ 
+    background-color: #f9e6f2;  
     color: #333; 
 } 
 
-/* Rosy Dew Theme */
 .rosy-dew-theme {
-    background-color: #fce4ec; /* Light pinkish background */
+    background-color: #fce4ec; 
     font-family: 'Poppins', sans-serif;
     color: #333;
     text-align: center;
 }
 
-/* Centering content with max-width */
 .container {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
 }
 
-/* Header */
 header { 
     display: flex; 
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
     align-items: center; 
     background-color: #fff; 
     padding: 20px; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 } 
 
-/* Logo Container */
 .logo-container { 
     text-align: center; 
-    margin-bottom: 5px; /* Space between image and text */
+    margin-bottom: 5px; 
 } 
 
-/* Logo Image */
 .top-image { 
-    max-width: 150px;  /* Adjust size */
+    max-width: 150px;  
     height: auto;  
-    margin-bottom: 5px; /* Space between the image and text */
+    margin-bottom: 5px;
 } 
 
-/* Logo Text */
 .logo { 
     font-size: 24px; 
     font-weight: bold; 
     color: #d63384; 
     text-align: center;
 } 
-
-/* Navigation */
 nav {
     display: flex;
     justify-content: center;
@@ -67,7 +59,7 @@ nav ul {
     display: flex; 
     gap: 20px; 
     padding: 0; 
-    margin: 10px 0 0; /* Adds space between logo and navigation */
+    margin: 10px 0 0; 
 } 
 
 nav ul li { 
@@ -85,7 +77,6 @@ nav ul li a:hover {
     color: #e91e63;
 }
 
-/* Banner */
 .banner { 
     text-align: center; 
     padding: 60px 20px; 
@@ -97,7 +88,6 @@ nav ul li a:hover {
     font-size: 36px; 
 } 
 
-/* Button Styling */
 .btn { 
     display: inline-block; 
     margin-top: 15px; 
@@ -143,7 +133,7 @@ featured-products grids{
 }
 
 .about-section h1 {
-    color: #ff4081; /* Vibrant pink for a bold streetwear vibe */
+    color: #ff4081; 
     font-size: 32px;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -243,7 +233,7 @@ button:hover {
 /* Basic styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2e1e1; /* Rosy Dew background */
+    background-color: #f2e1e1; 
     margin: 0;
     padding: 0;
 }
