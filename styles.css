@@ -117,14 +117,18 @@ nav ul li a:hover {
     background-color: #c2185b;
 }
 .featured-products {
-    display: grid; /* Arrange items in a row */
-    gap: 10px; /* Adjust spacing between items */
-    justify-content: space-between; /* Distribute items evenly */
+    text-align: center;
+    padding: 50px 20px;
 }
-
+featured-products grids{
+    display: 150px;
+    height: auto;
+    border-radius: 10px;
+}
 .featured-products img {
-    width: 30px; /* Set the image size */
-    height: auto; /* Maintain aspect ratio */
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* About Section */
@@ -256,7 +260,7 @@ h1 {
 }
 
 button {
-    background-color: #ff6f61; /* Accent color */
+    background-color: #ff6f61; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -295,8 +299,8 @@ button:hover {
 }
 
 .product img {
-    width: "50";
-    height: "50";
+    width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
