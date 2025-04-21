@@ -107,33 +107,39 @@ nav ul li a:hover {
     background-color: #ff6f61;
 }
 
-/* A.featured-products .product-grid {
+/* Horizontal scroll container for featured products */
+.product-grid {
   display: flex;
-  gap: 20px; 
-  justify-content: center;
-  flex-wrap: wrap; 
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
 }
 
+.product-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.product-grid::-webkit-scrollbar-thumb {
+  background-color: #d63384;
+  border-radius: 4px;
+}
+
+/* Individual product card */
 .product {
-  width: 100px; 
-  border: 1px solid #ddd;
+  min-width: 200px;
+  flex: 0 0 auto;
+  background-color: white;
   padding: 10px;
-  text-align: center;
   border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  scroll-snap-align: start;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .product img {
   width: 100%;
-  height: auto;
   border-radius: 8px;
-}
-
-.product .price {
-  margin: 10px 0;
-  font-weight: bold;
-  color: #e91e63;
 }
 
 about Section */
