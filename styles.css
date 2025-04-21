@@ -1,17 +1,10 @@
-/* General Styles */
-body { 
-    font-family: Arial, sans-serif; 
-    margin: 0; 
-    padding: 0; 
-    background-color: #f9e6f2;  
-    color: #333; 
-} 
-
-.rosy-dew-theme {
-    background-color: #fce4ec; 
+/* General Body Styling */
+body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fce4ec;
     color: #333;
-    text-align: center;
 }
 
 .container {
@@ -20,32 +13,36 @@ body {
     padding: 20px;
 }
 
-header { 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    background-color: #fff; 
-    padding: 20px; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
-} 
-
-.logo-container { 
-    text-align: center; 
-    margin-bottom: 5px; 
-} 
-
-.top-image { 
-    max-width: 150px;  
-    height: auto;  
-    margin-bottom: 5px;
-} 
-
-.logo { 
-    font-size: 24px; 
-    font-weight: bold; 
-    color: #d63384; 
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-} 
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.top-image {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d63384;
+    text-align: center;
+}
+
+/* Navigation */
 nav {
     display: flex;
     justify-content: center;
@@ -54,21 +51,17 @@ nav {
     padding: 10px 0;
 }
 
-nav ul { 
-    list-style: none; 
-    display: flex; 
-    gap: 20px; 
-    padding: 0; 
-    margin: 10px 0 0; 
-} 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 10px 0 0;
+}
 
-nav ul li { 
-    display: inline; 
-} 
-
-nav ul li a { 
-    text-decoration: none; 
-    color: #333; 
+nav ul li a {
+    text-decoration: none;
+    color: #333;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -77,20 +70,21 @@ nav ul li a:hover {
     color: #e91e63;
 }
 
-.banner { 
-    text-align: center; 
-    padding: 60px 20px; 
-    background: linear-gradient(to right, #f9c5d1, #f9e6f2); 
-    color: #333; 
-} 
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #f9c5d1, #f9e6f2);
+    color: #333;
+}
 
-.banner h1 { 
-    font-size: 36px; 
-} 
+.banner h1 {
+    font-size: 36px;
+}
 
-.btn { 
-    display: inline-block; 
-    margin-top: 15px; 
+.btn, button {
+    display: inline-block;
+    margin-top: 15px;
     padding: 12px 25px;
     font-size: 16px;
     font-weight: bold;
@@ -101,24 +95,34 @@ nav ul li a:hover {
     text-decoration: none;
     border-radius: 5px;
     transition: 0.3s ease-in-out;
-} 
+}
 
-.btn:hover { 
+.btn:hover, button:hover {
     background-color: #c2185b;
 }
+
+/* Featured Products */
 .featured-products {
     text-align: center;
     padding: 50px 20px;
 }
-featured-products grids{
-    display: 150px;
-    height: auto;
-    border-radius: 10px;
+
+.featured-products .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: center;
 }
+
 .featured-products img {
     width: 150px;
     height: auto;
     border-radius: 10px;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+    background-color: #ff6f61;
 }
 
 /* About Section */
@@ -133,7 +137,7 @@ featured-products grids{
 }
 
 .about-section h1 {
-    color: #ff4081; 
+    color: #ff4081;
     font-size: 32px;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -153,14 +157,7 @@ featured-products grids{
     color: #ff4081;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
+/* Contact Section */
 .contact-container {
     max-width: 800px;
     margin: 50px auto;
@@ -168,10 +165,6 @@ body {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-}
-
-h2 {
-    color: #333;
 }
 
 .contact-content {
@@ -182,7 +175,7 @@ h2 {
     margin-top: 20px;
 }
 
-.contact-info {
+.contact-info, .contact-form {
     flex: 1;
     text-align: left;
     padding: 20px;
@@ -191,12 +184,6 @@ h2 {
 .contact-info img {
     width: 120px;
     margin-bottom: 10px;
-}
-
-.contact-form {
-    flex: 1;
-    text-align: left;
-    padding: 20px;
 }
 
 form {
@@ -217,52 +204,15 @@ input, textarea {
     border-radius: 5px;
 }
 
-button {
+/* Feedback Message */
+#thankYouMessage {
+    display: none;
     margin-top: 15px;
-    padding: 10px;
-    background-color: #ff5a5f;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    color: green;
+    font-weight: bold;
 }
 
-button:hover {
-    background-color: #e0484d;
-}
-/* Basic styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2e1e1; 
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    text-align: center;
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    color: #2a2a2a;
-}
-
-button {
-    background-color: #ff6f61; 
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #e65c53;
-}
-
+/* Shop Section */
 #shop {
     padding: 50px 20px;
     text-align: center;
@@ -300,3 +250,29 @@ button:hover {
     color: #333;
     font-weight: bold;
 }
+
+/* Checkout Page */
+.checkout-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.checkout-container h2 {
+    margin-bottom: 20px;
+}
+
+.checkout-btn {
+    margin: 10px;
+    background-color: #28a745;
+}
+
+.discard-btn {
+    margin: 10px;
+    background-color: #dc3545;
+}
+                                                                                                                                                                                                  
