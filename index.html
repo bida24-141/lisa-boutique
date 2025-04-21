@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lisa Boutique</title>
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css" />
-
-    <!-- Font Awesome for Social Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="cart.js"></script> <!-- Corrected script references
 </head>
 
 <body>
-    <header class="sticky-top bg-white">
-        <div class="logo-container text-center p-3">
-            <img src="IMG_20250203_205223.jpg" alt="Lisa Boutique Logo" class="top-image img-fluid" style="max-height: 100px;" />
-            <h1 class="logo">Lisa Boutique</h1>
+
+    <header>
+        <div class="logo-container">
+            <img src="IMG_20250203_205223.jpg" alt="Lisa Boutique Logo" class="top-image">
+            <div class="logo">Lisa Boutique</div>
         </div>
 
-        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Shop.html">Shop Now</a></li>
+                <li><a href="feedback.html">feedback</a></li>
+            </ul>
+        </nav>
+
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">Lisa Boutique</a>
+                <a class="navbar-brand" href="index.html">My Website</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Shop.html">Shop Now</a></li>
-                        <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -46,102 +53,84 @@
         <div class="row">
             <div class="col-md-8">
                 <h2>Welcome to My Fashion Website!</h2>
-                <p>Don't you want to look as gorgeous as this woman here?</p>
-                <p>Try out our cute outfits!</p>
-                <img src="047b65c35c37f0b697bf7d7cf1d8791a.jpg" alt="A cute outfit" class="img-fluid rounded" />
+                <p>Don't you want to look this gorgeous woman here!</p>
+                <p>Try out our cute outifts</p>
+                <img src="047b65c35c37f0b697bf7d7cf1d8791a.jpg" alt="A cute outfit" class="img-fluid rounded">
             </div>
 
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Did You Know?</h5>
-                        <p class="card-text">
-                            Lisa Boutique offers exclusive, handpicked styles that cater to every woman's unique fashion taste. Our collections are designed to make you feel confident, stylish, and ready to take on the world!
-                        </p>
+                        <p class="card-text">Lisa boutique offes exclusive, handpicked styles that cater to every woman's unique fashion taste. our collectionsare designed to make you feel confident, stylish and ready to take on the world!.</p>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <section class="banner text-center p-5 bg-light">
+    <section class="banner">
         <h1>Where Fashion Meets Elegance</h1>
         <p>Explore our latest collections with a modern touch.</p>
-        <a href="Shop.html" class="btn btn-primary">Shop Now</a>
+        <a href="Shop.html" class="btn">Shop Now</a>
     </section>
 
-    <!-- ✅ Featured Products Section -->
-    <section class="featured-products my-5">
-        <h2 class="text-center mb-4">Featured Products</h2>
-        <div class="product-grid d-flex justify-content-center flex-wrap gap-4">
-            <div class="product text-center">
-                <img src="IMG_20250304_220431.jpg" alt="Elegant Red Dress" class="featured-img" />
-                <p>Elegant Red Dress</p>
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="IMG_20250304_220431.jpg" alt="IMG_20250304_220431.jpg">
             </div>
-            <div class="product text-center">
-                <img src="IMG_20250304_220454.jpg" alt="Casual Blue Outfit" class="featured-img" />
-                <p>Casual Blue Outfit</p>
+            <div class="product">
+                <img src="IMG_20250304_220454.jpg" alt="IMG_20250304_220454.jpg">
             </div>
-            <div class="product text-center">
-                <img src="IMG_20250304_220518.jpg" alt="Stylish Black Ensemble" class="featured-img" />
-                <p>Stylish Black Ensemble</p>
+            <div class="product">
+                <img src="IMG_20250304_220518.jpg" alt="IMG_20250304_220518.jpg">
             </div>
         </div>
     </section>
 
-    <section class="about text-center my-5">
+    <section class="about">
         <h2>About Us</h2>
         <p>Lisa Boutique is your go-to store for trendy, high-quality fashion.</p>
     </section>
 
-    <footer class="bg-dark text-white p-4 mt-5">
+    <footer>
         <p>© 2025 Lisa Boutique | Follow us on social media</p>
-        <a href="mailto:melisasonu10@gmail.com" class="text-white">Email Us</a>
-        <div class="social-links mt-2">
-            <a href="#" class="social-icon text-white me-3"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-icon text-white me-3"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon text-white"><i class="fab fa-twitter"></i></a>
-        </div>
+        <a href="mailto:melisasonu10@gmail.com">Email Us</a>
 
-        <form action="thanks.html" method="post" class="mt-4">
-            <fieldset class="mb-3">
-                <legend>Personal Information:</legend>
-                <input type="text" name="firstname" placeholder="First Name" class="form-control mb-2" />
-                <input type="text" name="lastname" placeholder="Last Name" class="form-control mb-2" />
-                <div class="form-check">
-                    <input type="radio" name="gender" value="male" checked class="form-check-input" />
-                    <label class="form-check-label">Male</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" name="gender" value="female" class="form-check-input" />
-                    <label class="form-check-label">Female</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" name="gender" value="other" class="form-check-input" />
-                    <label class="form-check-label">Other</label>
-                </div>
+        <form action="thanks.html" method="post">
+            <fieldset>
+                <legend>Personal information:</legend>
+                First name:<br>
+                <input type="text" name="firstname"><br>
+                Last name:<br>
+                <input type="text" name="lastname"><br>
+                <input type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Other<br>
             </fieldset>
 
-            <fieldset class="mb-3">
-                <legend>Contact Info:</legend>
-                <input type="text" name="username" placeholder="Username" class="form-control mb-2" />
-                <input type="email" name="email" placeholder="Email" class="form-control mb-2" />
-                <input type="tel" name="telephone" placeholder="Phone" class="form-control mb-2" />
+            <fieldset>
+                <legend> Contact Info </legend>
+                <input type="text" name="username" value="neo" size="10"><br>
+                <input type="text" name="email"> <br>
+                <input type="text" name="telephone" size="8"><br>
             </fieldset>
-
-            <input type="submit" value="Submit" class="btn btn-light" />
+            <input type="submit" value="Submit">
         </form>
     </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    <script src="cart.js"></script>
+    
 </body>
 </html>
 
+
+
                
-                       
+
+   
+           
+
                       
            
        
