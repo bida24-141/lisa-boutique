@@ -1,0 +1,80 @@
+// Function to update the cart display
+function updateCart() {
+  const cartItemsContainer = document.getElementById('cart-items');
+  const cartTotal = document.getElementById('cart-total');
+  
+  // Get cart items from localStorage
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  // Clear the cart display first
+  cartItemsContainer.innerHTML = '';
+  
+  // If the cart is empty, show a message
+  if (cart.length === 0) {
+    cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+    cartTotal.textContent = 'Total: $0';
+    return;
+  }
+  
+  // Populate the cart items
+  let total = 0;
+  cart.forEach(item => {
+    const cartItemDiv = document.createElement('div');
+    cartItemDiv.classList.add('cart-item');
+    cartItemDiv.innerHTML = `
+      <p>${item.name}</p>
+      <p>Price: $${item.price}</p>
+      <p>Quantity: ${item.quantity}</p>
+      <hr>
+    `;
+    cartItemsContainer.appendChild(cartItemDiv);
+    total += item.price * item.quantity;  // Update the total price
+  });
+
+  // Update total
+  cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+}
+
+// Function to add an item to the cart
+function addToCart(name, price) {
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  // Check if the item is already in the cart
+  const existingItem = cart.find(item => item.name === name);
+  
+  if (existingItem) {
+    // If the item exists, update the quantity
+    existingItem.quantity += 1;
+  } else {
+    // Add new item to the cart
+    cart.push({ name, price, quantity: 1 });
+  }
+
+  // Save the updated cart to localStorage
+  localStorage.setItem('cart', JSON.stringify(cart));
+
+  // Update the cart display
+  updateCart();
+}
+
+// Function to proceed to checkout
+function checkout() {
+  alert('Proceeding to checkout. Thank you for your purchase!');
+  localStorage.removeItem('cart'); // Clear the cart after checkout
+  updateCart(); // Update the cart display to reflect the cleared cart
+}
+
+// Function to clear the cart
+function clearCart() {
+  if (confirm('Are you sure you want to clear your cart?')) {
+    localStorage.removeItem('cart'); // Remove the cart from localStorage
+    updateCart(); // Update the cart display
+  }
+}
+
+// Run the function to update the cart display when the page loads
+updateCart();
+
+
+
+
