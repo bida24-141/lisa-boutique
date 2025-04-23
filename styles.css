@@ -1,4 +1,4 @@
-/* General Body Styling */
+ General Body Styling
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -13,7 +13,6 @@ body {
     padding: 20px;
 }
 
-/* Header */
 header {
     display: flex;
     flex-direction: column;
@@ -42,7 +41,6 @@ header {
     text-align: center;
 }
 
-/* Navigation */
 nav {
     display: flex;
     justify-content: center;
@@ -70,7 +68,6 @@ nav ul li a:hover {
     color: #e91e63;
 }
 
-/* Banner */
 .banner {
     text-align: center;
     padding: 60px 20px;
@@ -113,26 +110,23 @@ nav ul li a:hover {
   overflow-x: auto;
   gap: 20px;
   padding: 10px;
-  scroll-snap-type: x mandatory;
 }
 
-.product-grid::-webkit-scrollbar {
+.product-grid: {
   height: 8px;
 }
 
-.product-grid::-webkit-scrollbar-thumb {
+.product-grid: {
   background-color: #d63384;
   border-radius: 4px;
 }
 
-/* Individual product card */
 .product {
   min-width: 50px;
   flex: 0 0 auto;
   background-color: white;
   padding: 10px;
   border-radius: 10px;
-  scroll-snap-align: start;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
@@ -142,7 +136,6 @@ nav ul li a:hover {
   border-radius: 8px;
 }
 
-about Section */
 .about-section {
     text-align: center;
     padding: 50px 20px;
@@ -174,7 +167,6 @@ about Section */
     color: #ff4081;
 }
 
-/* Contact Section */
 .contact-container {
     max-width: 800px;
     margin: 50px auto;
@@ -221,7 +213,7 @@ input, textarea {
     border-radius: 5px;
 }
 
-/* Feedback Message */
+Feedback 
 #thankYouMessage {
     display: none;
     margin-top: 15px;
@@ -229,7 +221,6 @@ input, textarea {
     font-weight: bold;
 }
 
-/* Shop Section */
 #shop {
     padding: 50px 20px;
     text-align: center;
@@ -268,7 +259,6 @@ input, textarea {
     font-weight: bold;
 }
 
-/* Checkout Page */
 .checkout-container {
     max-width: 600px;
     margin: 50px auto;
