@@ -13,7 +13,6 @@
 </head>
 <body>
 
-  <!-- Personal Info and Contact Form -->
   <form action="thanks.html" method="post">
     <fieldset>
       <legend>Personal Information:</legend>
@@ -30,7 +29,7 @@
     <fieldset>
       <legend>Contact Info</legend>
       Username:<br>
-      <input type="text" name="username" value="neo" size="10"><br>
+      <input type="text" name="username" size="10"><br>
       Email:<br>
       <input type="email" name="email" required><br>
       Telephone:<br>
@@ -40,7 +39,7 @@
     <button type="submit">Submit</button>
   </form>
 
-  <!-- Feedback Section -->
+   Feedback Section 
   <section id="feedback" class="contact-container">
     <h2>Feedback</h2>
     <form id="feedbackForm">
@@ -51,10 +50,9 @@
     </form>
   </section>
 
-  <!-- JavaScript to handle feedback submission -->
   <script>
     document.getElementById("feedbackForm").addEventListener("submit", function(e) {
-      e.preventDefault(); // Prevent form from refreshing the page
+      e.preventDefault(); 
       document.getElementById("thankYouMessage").style.display = "block";
     });
   </script>
