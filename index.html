@@ -63,12 +63,6 @@
     </form>
   </section>
 
-  <section class="checkout-container">
-    <h2>Checkout</h2>
-    <button class="checkout-btn">Pay</button>
-    <button class="discard-btn">Discard Items</button>
-  </section>
-
   <footer>
     <p>© 2025 Lisa Boutique | Follow us on social media</p>
     <a href="mailto:melisasonu10@gmail.com">Email Us</a>
@@ -80,22 +74,6 @@
     document.getElementById('feedbackForm').addEventListener('submit', function(event) {
       event.preventDefault();
       document.getElementById('thankYouMessage').style.display = 'block';
-    });
-
-    // Add to Cart buttons
-    document.querySelectorAll('.add-to-cart').forEach(button => {
-      button.addEventListener('click', function () {
-        alert('Item added to cart!');
-      });
-    });
-
-    // Checkout buttons
-    document.querySelector('.checkout-btn').addEventListener('click', function () {
-      alert('Thank you for your purchase!');
-    });
-
-    document.querySelector('.discard-btn').addEventListener('click', function () {
-      alert('Cart has been cleared.');
     });
   </script>
   
