@@ -108,16 +108,16 @@ Featured Products
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: nowrap;
+    flex-direction: row;
     gap: 20px;
     padding: 10px;
-    overflow-x: hidden;
+    overflow-x: auto;
     width: 100%;
     max-width: 100%;
 }
 
 .product {
-    width: 100px;
+    width: 150px;
     background-color: white;
     padding: 8px;
     border-radius: 8px;
@@ -242,7 +242,7 @@ input, textarea {
     justify-items: center;
 }
 
-/* Reused Product Style */
+ Product Style
 .product:hover {
     transform: scale(1.05);
 }
