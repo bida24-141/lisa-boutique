@@ -103,6 +103,37 @@ nav ul li a:hover {
     margin-top: 10px;
     background-color: #ff6f61;
 }
+/* Horizontal scroll container for featured products */
+.product-grid {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+}
+
+.product-grid: {
+  height: 8px;
+}
+
+.product-grid: {
+  background-color: #d63384;
+  border-radius: 4px;
+}
+
+.product {
+  min-width: 50px;
+  flex: 0 0 auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
 
 .about-section {
     text-align: center;
