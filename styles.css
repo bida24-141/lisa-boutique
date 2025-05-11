@@ -1,4 +1,4 @@
-/* General Body Styling */
+ General Body Styling 
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -103,7 +103,7 @@ nav ul li a:hover {
     background-color: #ff6f61;
 }
 
-/* Featured Products */
+ Featured Products 
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -142,7 +142,7 @@ nav ul li a:hover {
     margin-top: 5px;
 }
 
-/* About Section */
+ About Section 
 .about-section {
     text-align: center;
     padding: 50px 20px;
@@ -221,7 +221,7 @@ input, textarea {
     border-radius: 5px;
 }
 
-/* Feedback */
+ Feedback 
 #thankYouMessage {
     display: none;
     margin-top: 15px;
@@ -229,7 +229,7 @@ input, textarea {
     font-weight: bold;
 }
 
-/* Shop Grid */
+Shop Grid 
 #shop {
     padding: 50px 20px;
     text-align: center;
@@ -243,12 +243,12 @@ input, textarea {
     padding: 10px;
 }
 
-/* Product Style */
+Product Style 
 .product:hover {
     transform: scale(1.05);
 }
 
-/* Checkout Section */
+ Checkout Section 
 .checkout-container {
     max-width: 600px;
     margin: 50px auto;
@@ -273,4 +273,7 @@ input, textarea {
     background-color: #dc3545;
 }
 
+.bg-pink {
+  background-color: #f8c6d8;
+}
                                                                                                                                                                                                   
